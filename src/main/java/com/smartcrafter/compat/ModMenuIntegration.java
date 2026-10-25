@@ -1,0 +1,19 @@
+package com.smartcrafter.compat;
+
+import com.smartcrafter.gui.SmartCrafterScreen;
+import com.terraformersmc.modmenu.api.ConfigScreenFactory;
+import com.terraformersmc.modmenu.api.ModMenuApi;
+import net.fabricmc.api.EnvType;
+import net.fabricmc.api.Environment;
+
+/**
+ * ModMenu integration providing in-game configuration access.
+ */
+@Environment(EnvType.CLIENT)
+public class ModMenuIntegration implements ModMenuApi {
+
+    @Override
+    public ConfigScreenFactory<?> getModConfigScreenFactory() {
+        return parent -> new SmartCrafterScreen();
+    }
+}

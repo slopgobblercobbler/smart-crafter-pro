@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "smartcrafter",
+  "version": "${version}",
+  "name": "SmartCrafter Pro",
+  "description": "Advanced client-side recursive auto-crafting and bulk batch compressor mod with safe transaction sequencing.",
+  "authors": [
+    "SlopGGobbler",
+    "Antigravity Team"
+  ],
+  "contact": {
+    "homepage": "https://github.com/slopggobbler/smart-crafter-pro",
+    "sources": "https://github.com/slopggobbler/smart-crafter-pro",
+    "issues": "https://github.com/slopggobbler/smart-crafter-pro/issues"
+  },
+  "license": "MIT",
+  "icon": "assets/smartcrafter/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.smartcrafter.SmartCrafterMod"
+    ],
+    "modmenu": [
+      "com.smartcrafter.compat.ModMenuIntegration"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "minecraft": ">=1.20.0",
+    "java": ">=21"
+  },
+  "suggests": {
+    "modmenu": "*"
+  }
+}
